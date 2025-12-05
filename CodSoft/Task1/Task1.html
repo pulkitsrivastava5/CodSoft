@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pulkit Srivastava</title>
+    <meta name="description" content="Personal portfolio showcasing projects, skills and contact information." />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="#">
+                    <!-- simple inline SVG logo + name -->
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect x="2" y="2" width="20" height="20" rx="4" fill="#2563eb" />
+                        <path d="M7 12h10" stroke="#fff" stroke-width="1.6" stroke-linecap="round" />
+                        <path d="M7 8h10" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity="0.8" />
+                    </svg>
+                    <span class="brand-name">Pulkit Srivastava</span>
+                </a>
+                <nav class="site-nav" id="site-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <div class="container hero-inner">
+                    <div class="hero-copy">
+                        <h1>Hi, I'm Pulkit </h1>
+                        <p class="lead">Frontend developer &amp; designer specializing in building accessible, performant web apps. I enjoy turning ideas into delightful user experiences.</p>
+                        <ul class="intro-skills">
+                            <li>HTML &amp; CSS</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React / Vue</li>
+                            <li>Responsive design</li>
+                        </ul>
+                        <div class="hero-cta">
+                            <a class="btn" href="#projects">View projects</a>
+                            <a class="btn btn-ghost" href="#contact">Contact me</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <img class="profile-photo" src="ref/WhatsApp Image 2025-08-06 at 13.48.55_7508b3d0.jpg" alt="Your Name profile photo" />
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <div class="container">
+                    <h2>About</h2>
+                    <p>I'm a web developer focused on creating clean and accessible interfaces. I take projects from concept to production, with emphasis on performance and user experience.</p>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <div class="container">
+                    <h2>Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill">
+                            <div class="skill-head"><strong>HTML &amp; CSS</strong><span>95%</span></div>
+                            <div class="skill-bar"><div style="width:95%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-head"><strong>JavaScript</strong><span>88%</span></div>
+                            <div class="skill-bar"><div style="width:88%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-head"><strong>Frameworks</strong><span>80%</span></div>
+                            <div class="skill-bar"><div style="width:80%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-head"><strong>Design</strong><span>75%</span></div>
+                            <div class="skill-bar"><div style="width:75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <div class="grid projects-grid">
+                        <article class="card">
+                            <img src="https://via.placeholder.com/600x320.png?text=Project+1" alt="Project 1 screenshot" />
+                            <h3>Project One</h3>
+                            <p>Responsive web app that demonstrates UI components and accessibility best practices.</p>
+                            <a class="btn btn-small" href="#">View</a>
+                        </article>
+                        <article class="card">
+                            <img src="https://via.placeholder.com/600x320.png?text=Project+2" alt="Project 2 screenshot" />
+                            <h3>Project Two</h3>
+                            <p>Interactive data visualization project built with D3 and modern tooling.</p>
+                            <a class="btn btn-small" href="#">View</a>
+                        </article>
+                        <article class="card">
+                            <img src="https://via.placeholder.com/600x320.png?text=Project+3" alt="Project 3 screenshot" />
+                            <h3>Project Three</h3>
+                            <p>Small e-commerce demo with checkout flow and state management.</p>
+                            <a class="btn btn-small" href="#">View</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="resume" class="section">
+                <div class="container">
+                    <h2>Resume</h2>
+                    <p>You can download a PDF version of my resume or view it online.</p>
+                    <a class="btn" href="resume.pdf" download>Download Resume (PDF)</a>
+                    <a class="btn btn-ghost" href="#contact">Request a copy</a>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <form id="contact-form" class="contact-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="How can I help?" required></textarea>
+
+                        <div class="form-actions">
+                            <button class="btn" type="submit">Send</button>
+                        </div>
+                        <div class="form-message" id="form-message" aria-live="polite"></div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+                <div class="links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
